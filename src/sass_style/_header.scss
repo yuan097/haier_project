@@ -13,11 +13,12 @@ body{
 
 $width:1230px;
 $height:70px;
+
 header{
     width: $width;
     height: $height;
-    background: pink;
     margin: 0 auto;
+    background: orange;
     line-height: $height;
         img{
             width: 85px;
@@ -26,7 +27,6 @@ header{
             margin: 21.6px 50px 21.6px 0;
         }
         .navli{
-            // width: 663.2px;
             height: $height;
                 .nav-li{
                     float: left;
@@ -37,11 +37,4 @@ header{
                     }
                 }
         }    
-}
-
-.banner{
-    width: $width;
-    height: $height;
-    background: red;
-    margin: 0 auto;
 }

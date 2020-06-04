@@ -1,0 +1,193 @@
+/* 头部 */
+body{
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    height: 60px;
+}
+.container{
+    width: 1236px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.registry{
+    width: 618px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+}
+.registry>a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.registry .logo{
+    display: inline-block;
+    width: 71px;
+    height: 21px;
+    line-height: 60px;
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.container span{
+    font-size: 16px;
+    vertical-align: middle;
+}
+.nav-right{
+    float: right;
+    line-height: 60px;
+    font-size: 16px;
+}
+.nav-right p{
+    font-size: 14px;
+}
+.nav-right a{
+    color: #32ccff;
+    vertical-align: middle;
+}
+.nav-right p span{
+    font-size: 14px;
+}
+
+.clear{
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    content: '';
+}
+
+/* banner */
+.banner{
+    width: 2258px;
+    height: 640px;
+    margin: 0 auto;
+    background: url(https://user.haier.com/cn/images/vipuser_denglubg3.jpg)no-repeat 0 0;
+    background-position: -180px -180px;
+}
+
+/* form表单 */
+.wrap{
+    width: 618px;
+    height: 488px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.form-wrap{
+    width: 420px;
+    height: 488px;
+    background: white;
+    margin-left: 105px;
+    padding-bottom: 30px;
+}
+.form-wrap h3{
+    width: 420px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    text-indent: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: normal;
+}
+.form-wrap form{
+    width: 360px;
+    height: 332px;
+    padding: 30px;
+    position: relative;
+}
+.form-wrap form p{
+    width: 365px;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-wrap form input{
+    width: 360px;
+    height: 50px;
+    padding: 0 0 0 40px;
+    line-height: 50px;
+    font-size: 14px;
+    border: 1px solid #d6dbdd;
+}
+.form-wrap form p>span{
+    display: inline-block;
+    width: 26px;
+    height: 30px;
+    background: url(../img/login_icon_1010.gif )no-repeat;
+    background-position: -44px -89px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.form-wrap form p .pass{
+    background-position: -44px -131px;
+}
+.form-wrap form p .num{
+    background-position: 0px -134px;
+}
+.form-wrap .agreen i{
+    display:inline-block ;
+    width: 24px;
+    height: 24px;
+    background: url(../img/login_icon_1010.gif)no-repeat 0 -282px;
+    vertical-align: middle;
+}
+.form-wrap .agreen i:active{
+    display:inline-block ;
+    width: 24px;
+    height: 24px;
+    background: url(../img/login_icon_1010.gif)no-repeat 0 -306px;
+    vertical-align: middle;
+}
+.form-wrap form button{
+    background: #c6cacb;
+    width: 360px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    border: none;
+    color: #fff;
+    position: absolute;
+    bottom: -70px;
+}
+
+
+
+/* 底部 */
+footer{
+    width: 100%;
+    height: 56px;
+    background: #2b2c2d;
+}
+.bottom{
+    width: 1236px;
+    height: 56px;
+    margin: 0 auto;
+    line-height: 56px;
+}
+
+.bottom .bottom-left>a{
+    display: inline-block;
+    height: 15px;
+    color: #666;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 15px;
+    border-right: 1px solid #515252;
+}
+.bottom .bottom-left>a:last-child{
+    border-right: none;
+}
+.bottom .bottom-right{
+    float: right;
+    line-height: 56px;
+    color: #666;
+    font-size: 12px;
+    
+}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@mixin margin {
+    margin: 0 auto;
+}
+$width:1230px;
+
+.paihang_wrap{
+    width:  1583px;
+    height: 874px;
+    background: palegreen;
+    @include margin;
+        .show_box{
+            width: 1583px;
+            height: 696px;
+                .showbox_bx{
+                    width: $width;
+                    height: 696px;
+                    @include margin;
+                    background: floralwhite;
+                }
+        }
+}
+
+.showbox_bx{
+    li{
+        width:410px ;
+        height: 636px;
+        background: goldenrod;
+        list-style: none;
+        float: left;
+    }
+}
+
+

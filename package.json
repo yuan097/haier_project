@@ -1,13 +1,21 @@
 {
-  "name": "day-23_gulpitem",
+  "name": "haier_project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "海尔商城",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuan097/haier_project.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuan097/haier_project/issues"
+  },
+  "homepage": "https://github.com/yuan097/haier_project#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",

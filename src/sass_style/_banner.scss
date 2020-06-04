@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@mixin padding {
+    margin: 0;
+    padding: 0;
+}
+@mixin lis {
+    list-style: none;
+}
+body{
+    @include padding;
+}
+
+.banner{
+    width: 1583px;
+    height: 527.66px;
+    background:teal;
+    margin: 0 auto;
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@mixin padding {
+    margin: 0;
+    padding: 0;
+}
+@mixin lis {
+    list-style: none;
+}
+body{
+    @include padding;
+}
+
+$width:1230px;
+// $height:70px;
+
+$xinxuanW:1583px;
+
+
+.heart_wrap{
+    width: $xinxuanW;
+    height: 968px;
+    background: wheat;
+    margin:0 auto;
+}
+
+// .heart_bx{
+//     width: $width;
+//     height: 60px;
+//     margin: 0 auto;
+//     background: yellowgreen;
+// }
+.content_wrap{
+    width: $xinxuanW;
+    height: 744px;
+    background: forestgreen;
+    overflow: hidden;
+    .content{
+        width: $width;
+        height: 684px;
+        margin: 60px auto;
+        background: gold;
+            .xinxuan_box{
+                width: 500px;
+                height: 648px;
+                background: indianred;
+                float: left;
+            }
+            .xinxuan_box2{
+                width: 350px;
+                height: 324px;
+                background: #fff;
+                float: left;
+            }
+    }
+}

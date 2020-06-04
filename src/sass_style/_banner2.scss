@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+$width:1230px;
+.banner2_wrap{
+    width: 1583px;
+    height: 800px;
+    margin: 0 auto;
+    background: lightseagreen;
+        .banner2_content{
+            width: $width;
+            height: 800px;
+            background: orange;
+            margin: 0 auto;
+        }
+}

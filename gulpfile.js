@@ -30,15 +30,15 @@ const watch = require('gulp-watch'); //gulp监听
 
 
 //1.创建一个简单的gulp任务
-gulp.task('hello', () => {
-    console.log('hello,gulp');
-});
+// gulp.task('hello', () => {
+//     console.log('hello,gulp');
+// });
 
 //2.复制文件
-gulp.task('copyfile', () => {
-    return gulp.src('src/thirdplugins/*.js')
-        .pipe(gulp.dest('dist/thirdplugins'));
-});
+// gulp.task('copyfile', () => {
+//     return gulp.src('src/thirdplugins/*.js')
+//         .pipe(gulp.dest('dist/thirdplugins'));
+// });
 
 // gulp.task('copyfile1', () => {
 //     return gulp.src('src/fonts/*.woff')
@@ -53,21 +53,21 @@ gulp.task('uglifyhtml', () => {
 });
 
 //4.压缩css文件 - 引入插件包
-// gulp.task('uglifycss', () => {
-//     return gulp.src('src/css/*.css')
-//         .pipe(css()) //执行css插件包
-//         .pipe(gulp.dest('dist/css'));
-// });
+gulp.task('uglifycss', () => {
+    return gulp.src('src/css/*.css')
+        .pipe(css()) //执行css插件包
+        .pipe(gulp.dest('dist/css'));
+});
 
 //5.sass编译成css - 引入插件包
 gulp.task('compilesass', () => {
-    return gulp.src('src/sass/*.scss')
+    return gulp.src('src/sass_style/*.scss')
         .pipe(plugins.sourcemaps.init()) //初始化gulp-sourcemaps插件
         .pipe(plugins.sass({
             outputStyle: 'compressed' //压缩
         }))
         .pipe(plugins.sourcemaps.write('.')) //通过sourcemaps,生成.map文件
-        .pipe(gulp.dest('dist/css/'));
+        .pipe(gulp.dest('dist/sass_style/'));
 });
 
 
@@ -81,12 +81,12 @@ gulp.task('uglifyjs', () => {
         .pipe(gulp.dest('dist/script'));
 });
 
-//7.图片压缩 - jpg/gif/bmp/webp/ [png] - imagemin
-gulp.task('uglifyimg', () => {
-    return gulp.src('src/img/*.{jpg,png,gif}')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'))
-});
+// //7.图片压缩 - jpg/gif/bmp/webp/ [png] - imagemin
+// gulp.task('uglifyimg', () => {
+//     return gulp.src('src/img/*.{jpg,png,gif}')
+//         .pipe(imagemin())
+//         .pipe(gulp.dest('dist/img'))
+// });
 
 //8.监听
 // 监听插件-gulp-watch()
@@ -100,5 +100,5 @@ gulp.task('uglifyimg', () => {
 
 
 gulp.task('default', () => {
-    watch(['src/*.html', 'src/sass/*.scss', 'src/script/*.js'], gulp.parallel('uglifyhtml', 'compilesass', 'uglifyjs'));
+    watch(['src/*.html', 'src/sass_style/*.scss', 'src/script/*.js'], gulp.parallel('uglifyhtml', 'compilesass', 'uglifyjs'));
 });

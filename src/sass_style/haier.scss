@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@import "header";
+
+@import "banner";
+
+@import "xinxuan";
+
+@import "banner2";
+
+@import "paihang";
+
+@import "index";
+
+@import "huodong";
+
+@import "pinpaistory";
+
+@import "news";
+
+// @mixin padding {
+//     margin: 0;
+//     padding: 0;
+// }
+// @mixin banxin{
+//     width: 1230px;
+//     // height: 70px;
+//     margin: 0 auto;
+// }
+
+// @mixin container {
+//     width: 100vw;
+// }
+
+// .container{
+//     @include container()
+// }
+
+// @mixin title {
+//     width: $xinxuanW;
+//     height: 98px;
+//     h1 {
+//         width: $xinxuanW;
+//         height: 98px;
+//         margin: 0 auto;
+//         text-align: center;
+//         background:rosybrown;
+//         line-height: 98px;
+//     }
+// }
+
+// .title{
+//     @include title()
+// }
