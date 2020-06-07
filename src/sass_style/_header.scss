@@ -18,23 +18,141 @@ header{
     width: $width;
     height: $height;
     margin: 0 auto;
-    background: orange;
     line-height: $height;
-        img{
-            width: 85px;
-            height: 26.17px;  
-            float: left;
-            margin: 21.6px 50px 21.6px 0;
-        }
-        .navli{
+    position: relative;
+        .header_left{
+            // width: 900px;
             height: $height;
-                .nav-li{
+                .logo{
+                    width: 85px;
+                    height: $height;
+                    text-align: center;
                     float: left;
-                    background: wheat;
-                    padding: 0 20px;
-                    ul{
-                        display: none;
+                        img{
+                            width: 85px;
+                            height: 26.17px;  
+                            vertical-align: middle;
+                        }  
+                }
+        }
+        .header_right{
+            width: 300px;
+            height: 70px;
+            position: absolute;
+            top: 0;
+            right: 0;
+                .nav_input{
+                    width: 212px;
+                    height: 38px;
+                    border: none;
+                    background: #fafafa;
+                    padding:0 8px;
+                    &:focus{
+                        border: 1px solid #c8c8c8;
                     }
                 }
-        }    
+
+                .iconfont{
+                    font-size: 24px;
+                    margin-left: -26px;
+                    vertical-align: middle;
+                }
+                .ico2{
+                    padding-left:30px ;
+                }
+                .ico3{
+                    margin-left:18px;
+                    text-align: center;
+                    font-size: 28px;
+                }
+        }
+        .ico3:hover{
+            cursor: pointer;
+            color: green;
+        }
+    
 }
+
+    .nav{
+        display: inline-block;
+        // width: 644px;
+        height: 70px;
+        // background: cadetblue;
+        margin-left: 112px;
+            .box{
+                display: inline-block;
+                padding: 0 30px;
+                height: $height;
+                font-size: 14px;
+                font-weight: bold;
+                position: relative;
+                    .list2{
+                        min-width: 140px;
+                        width: 140px;
+                        background: #f6f6f6;
+                        box-sizing: border-box;
+                        padding:0;
+                        position: absolute;
+                        left: 0;
+                        margin: 0;
+                        display: none;
+                            li{
+                                width: 100%;
+                                height: 50px;
+                                box-sizing: border-box;
+                                padding: 0 0 0 30px;
+                                text-align: left;
+                                color: #444;
+                                font-weight: normal;
+                                float: left;
+                            }
+                            .hover_line{
+                                width: 100%;
+                                height: 6px;
+                                position: absolute;
+                                left: 0;
+                                z-index: 999;
+                            }
+                            
+                        
+                    }
+
+            }
+    }
+
+
+
+    .box:hover span{
+        color: #005aaa;
+    }
+    .box:hover .list2{
+        display: block;
+        z-index: 999;
+    }
+    .box:hover .hover_line{
+        background: #005aaa;
+        display: block;
+    }
+   .box .list2 li:hover{
+    background: white;
+}
+
+    // 三级导航
+    .li3{
+        position: relative;
+            .three_ol{
+                width: 540px;
+                height: 450px;
+                background: wheat;
+                position: absolute;
+                left:140px ;
+                top: 0;
+                display: none;
+            }
+            .three_ol:hover div{
+                color:#005aaa ;
+            }
+    }
+    li:hover .three_ol{
+            display: block;
+    }

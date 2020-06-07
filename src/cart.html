@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车 - 海尔商城</title>
+    <link rel="stylesheet" href="./sass_style/commen.css">
+    <link rel="stylesheet" href="./sass_style/headfoot.css">
+    <link rel="stylesheet" href="./sass_style/iconfont.css">
+    <link rel="stylesheet" href="./sass_style/cart.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部样式 -->
+        <header>
+            <div class="header_left">
+                <div class="logo">
+                    <a href="#"><img src="https://image.haier.com/cn/images/haier2019_logo.png" alt=""></a>
+                </div>
+                <div class="nav">
+                    <div class="box">
+                        <span>智慧家庭</span>
+                        <ul class="list2">
+                            <p class="hover_line"></p>
+                            <li>智慧首页</li>
+                            <li>智慧方案</li>
+                            <li>智慧家电</li>
+                            <li>生活资讯</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span>个人与家用产品</span>
+                        <ul class="list2">
+                            <p class="hover_line"></p>
+                            <li class="li3">冰箱 冰柜
+                                <!-- 三级导航 -->
+                                <ol class="three_ol">
+                                    <div>冰箱</div>
+                                    <div>冰柜</div>
+                                </ol>
+                            </li>
+                            <li class="li3">冰吧 酒柜
+                                <ol class="three_ol">
+                                    <div>冰吧</div>
+                                    <div>酒柜</div>
+                                </ol>
+                            </li>
+                            <li>洗衣机</li>
+                            <li>空调</li>
+                            <li>电视</li>
+                            <li>热水器</li>
+                            <li>厨房电器</li>
+                            <li>电脑及外设</li>
+                            <li>小家电</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span>商业解决方案</span>
+                        <ul class="list2">
+                            <p class="hover_line"></p>
+                            <li>中央空调</li>
+                            <li>商业冷柜</li>
+                            <li>智慧家电</li>
+                            <li>生活资讯</li>
+                            <li>中央空调</li>
+                            <li>商业冷柜</li>
+                            <li>智慧家电</li>
+                            <li>生活资讯</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span>购买与服务</span>
+                        <ul class="list2">
+                            <p class="hover_line"></p>
+                            <li>产品导购</li>
+                            <li>购买方案</li>
+                            <li>智慧家电</li>
+                            <li>生活资讯</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <span>关于海尔</span>
+                        <ul class="list2">
+                            <p class="hover_line"></p>
+                            <li>海尔集团</li>
+                            <li>海尔品牌</li>
+                            <li>智慧家电</li>
+                            <li>生活资讯</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_right">
+                <input type="text" class="nav_input"><span class="iconfont">&#xe615;</span>
+                <span class="iconfont ico2">&#xe636;</span>
+                <span class="iconfont ico3">&#xe751;</span>
+            </div>
+        </header>
+
+        <!-- 购物车 -->
+
+        <div class="cart_wrap">
+            <div class="shangp"><a href='#' style="color:#F00">全部商品</a>&ensp;<span>0</span></div>
+            <div class="cart_head">
+                <div class="select"><input type="checkbox
+                    ">&nbsp; 全选</div>
+                <p class="goods">商品</p>
+                <div class="carthead_right">
+                    <p>单价</p>
+                    <p>数量</p>
+                    <p>小计</p>
+                    <p>操作</p>
+                </div>
+            </div>
+            <div class="cartlist_item">
+                <!--描述：商品详情展示开始-->
+                <div class="info warp">
+                    <ul>
+                        <li class="info_1"><input type="checkbox" value="" /></li>
+                        <li class="info_2"><img
+                                src="https://img10.360buyimg.com/cms/s80x80_jfs/t1/130895/25/1644/353917/5edbb923E716c32d2/3c6968f142f0cc12.jpg"
+                                width="80px" />
+                            <li class="info_3"><a href="">海尔(Haier)530升双变频风冷无霜对开门冰箱AFR精控多路送风厨装一体90°自动悬停门BCD-530WDVL</a></li>
+                        </li>
+                        <li class="info_4"><a>新品上市</a></li>
+                        <li class="info_5">￥3899.00</li>
+                        <li class="info_6">
+                            <button>-</button>
+                            <input value="1" />
+                            <button class="but">+</button>
+                        </li>
+                        <li class="info_7">￥3899.00</li>
+                        <li class="info_8">
+                            <a href="">删除</a>
+                            <a href="">移到我的关注</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--描述：商品结算开始-->
+            <div class="balance warp">
+                <ul class="balance_ul1">
+                    <li><input type="checkbox" />
+                        全选
+                    </li>
+                    <li><a href="">删除选中商品</a></li>
+                    <li><a href="">移到关注</a></li>
+                    <li><a href="">清理购物车</a></li>
+                </ul>
+
+                <ul class="balance_ul2">
+                    <li>已经选择<span>1</span>件商品</li>
+                    <li>总价<span>￥3899.00</span>&nbsp;</li>
+                    <li>
+                        <button class="butt">去结算</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <footer>
+            <div class="footer_wrap">
+                <div class="foot_nav">
+                    <dl>
+                        <dt>智慧家庭</dt>
+                        <dd>智慧首页</dd>
+                        <dd>智慧家电</dd>
+                        <dd>生活资讯</dd>
+                        <dd>智慧体验店</dd>
+                    </dl>
+                    <dl>
+                        <dt>个人与家用产品</dt>
+                        <dd>冰箱</dd>
+                        <dd>冷柜</dd>
+                        <dd>冰吧</dd>
+                        <dd>酒柜</dd>
+                        <dd>洗衣机</dd>
+                        <dd>空调</dd>
+                        <dd>电视</dd>
+                        <dd>热水器</dd>
+                        <dd>厨房电器</dd>
+                        <dd>电脑及外设</dd>
+                        <dd>小家电</dd>
+                    </dl>
+                    <dl>
+                        <dt>商业解决方案</dt>
+                        <dd>中央空调</dd>
+                        <dd>商用冷柜</dd>
+                        <dd>商用洗涤</dd>
+                        <dd>商用电视</dd>
+                        <dd>商用电脑</dd>
+                        <dd>商用净水设备</dd>
+                        <dd>商用热泵</dd>
+                    </dl>
+                    <dl>
+                        <dt>购买与服务</dt>
+                        <dd>产品导购</dd>
+                        <dd>智慧家电</dd>
+                        <dd>生活资讯</dd>
+                        <dd>智慧体验店</dd>
+                    </dl>
+                    <dl>
+                        <dt>关于海尔</dt>
+                        <dd>智慧首页</dd>
+                        <dd>智慧家电</dd>
+                        <dd>生活资讯</dd>
+                        <dd>智慧体验店</dd>
+                    </dl>
+                    <dl>
+                        <dt>友情链接</dt>
+                        <dd>智慧生活体验馆</dd>
+                        <dd>创客实验室</dd>
+                        <dd>COSMOPlat平台</dd>
+                        <dd>海尔创意平台</dd>
+                    </dl>
+                </div>
+                <div class="foot_bottom">
+                    <div class="bottom-left">
+                        <span>关于海尔&emsp;| &emsp;</span>
+                        <span>联系我们&emsp;| &emsp;</span>
+                        <span>法律声明&emsp;| &emsp;</span>
+                        <span>帮助中心&emsp;| &emsp;</span>
+                        <span>海尔门店&emsp;| &emsp;</span>
+                    </div>
+                    <div class="bottom-mid">
+                        <span>鲁ICP备09096283</span>
+                        &emsp;| &emsp;
+                        <span>Copyright ©2015 海尔集团 版权所有</span>
+                    </div>
+                    <div class="bottom-right">
+                        <span>Haier 全球网站群 · </span>
+                        <span>中国 关注海尔</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

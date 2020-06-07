@@ -3,17 +3,90 @@
 @mixin padding {
     margin: 0;
     padding: 0;
-}
-@mixin lis {
     list-style: none;
 }
-body{
+
+
+li{
     @include padding;
 }
 
 .banner{
-    width: 1583px;
+    max-width: 1680px;
+    width: 100%;
     height: 527.66px;
     background:teal;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+        ul{
+            position: absolute;
+            left: 0;
+            top: 0;
+            // display: none;
+                li{
+                    // float: left;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            // display: block;
+                        }
+                }
+        }
+        ol{
+            position: absolute;
+            left: 45%;
+            bottom: 10px;
+            display: flex;
+            flex-direction: row;
+                li{
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                        span{
+                            display:inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: #fff;
+                            text-align: center;
+                        }
+                }
+        }
+        p{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: #f6f6f6;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+               a{
+                   font-size: 50px;
+                   color: red;
+                   opacity: 0.7;
+               }
+               
+        }
+        .right{
+            right: 100px;
+        }
+        .left{
+            left: 100px;
+        }
+}
+
+.active{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #fff;
 }

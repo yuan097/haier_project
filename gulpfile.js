@@ -81,12 +81,12 @@ gulp.task('uglifyjs', () => {
         .pipe(gulp.dest('dist/script'));
 });
 
-// //7.图片压缩 - jpg/gif/bmp/webp/ [png] - imagemin
-// gulp.task('uglifyimg', () => {
-//     return gulp.src('src/img/*.{jpg,png,gif}')
-//         .pipe(imagemin())
-//         .pipe(gulp.dest('dist/img'))
-// });
+//7.图片压缩 - jpg/gif/bmp/webp/ [png] - imagemin
+gulp.task('uglifyimg', () => {
+    return gulp.src('src/img/*.{jpg,png,gif,web}')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
+});
 
 //8.监听
 // 监听插件-gulp-watch()

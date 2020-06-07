@@ -20,29 +20,3 @@ $width:1230px;
     @include container()
 }
 
-@mixin title {
-    width: 1583px;
-    height: 98px;
-    h1 {
-        width: 1583px;
-        height: 98px;
-        margin: 0 auto;
-        text-align: center;
-        background:rosybrown;
-        line-height: 98px;
-    }
-}
-
-.title{
-    @include title()
-}
-
-@mixin heart_bx {
-    width: $width;
-    height: 60px;
-    margin: 0 auto;
-    background: yellowgreen;
-}
-.heart_bx{
-    @include heart_bx()
-}

@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+$width:1230px;
+$color:#005aaa;
+
+.dedails_wrap{
+    width: 100%;
+    padding-top: 22px;
+    background-color: #f0f1f4;
+    height: 692px;
+        .datails_bx{
+            max-width: $width;
+            margin: 0 auto;
+            padding: 0 15px;
+                nav{
+                    width: $width;
+                    font-size: 14px;
+                    color: #444;
+                }
+               .details_box{
+                   width: $width;
+                   height: 596px;
+                   margin-top: 55px;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: space-between;
+                    .left{
+                        width: 500px;
+                        height: 596px;
+                        position: relative;
+                    }
+                    .right{
+                        width: 700px;
+                        height: 636px;
+                    }
+               }
+        }
+       
+}
+
+.left .midbox{
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    line-height: 48px;
+    // position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .obg{
+            opacity: 0.3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+        }
+}
+
+.left .bigbox{
+    width: 500px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 514px;
+    border: 1px solid #f0f1f4;
+    background: #fff;
+    display: none;
+}
+.left #show_box{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+        #left{
+            position: absolute;
+            left: 0;
+            top: 20px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        #right{
+            position: absolute;
+            right: 0;
+            top: 20px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .ullist{
+            width: 100%;
+            height: 66px;
+            white-space: nowrap;
+            display: inline-block;
+            margin-left: 0px;
+            padding: 0 26px;
+            overflow: hidden;
+                li{
+                    width: 20%;
+                    text-align: center;
+                    white-space: nowrap;
+                    float: left;
+                        &:hover img{
+                            border-color: #005aaa;
+                        }
+                        img{
+                            border: 1px solid #ddd;
+                            max-width: 100%;
+                            max-height: 100%;
+                            padding: 2px;
+                        }
+                }
+        }
+}
+
+
+//加入购物车
+
+.right .choose-box{
+    width: 590px;
+    height: 46px;
+    margin-top: 400px;
+    display: flex;
+    flex-direction: row;
+        .input_wrap{
+            width: 58px;
+            height: 44px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin-right: 10px;
+                input{
+                    width: 43px;
+                    height: 42px;
+                    line-height: 42px;
+                    text-align: center;
+                    border: none;
+                    position: absolute;
+                    top: 1px;
+                    left: 0px;
+                }
+                a{
+                    display: block;
+                    width: 15px;
+                    text-align: center;
+                    background: #f1f1f1;
+                    position: absolute;
+                    right: -1px;
+                    border: 1px solid #ccc;
+                    overflow: hidden;
+                    padding: 4px 0; 
+                }
+                .jian{
+                    position: absolute;
+                    bottom: -1px;
+                }
+        }
+    
+}
+.choose-box>.cat{
+    display:inline-block;
+    padding: 0 26px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    background: #df3033;
+    color: #fff;
+    font-weight: bold;
+}

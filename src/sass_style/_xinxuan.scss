@@ -1,56 +1,153 @@
 @charset "utf-8";
 
-@mixin padding {
-    margin: 0;
-    padding: 0;
+@mixin title {
+    width: 1583px;
+    height: 98px;
+    h1 {
+        width: 1583px;
+        height: 98px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 98px;
+        font-size: 42px;
+        margin-top:28px ;
+        padding-bottom: 20px;
+    }
 }
-@mixin lis {
-    list-style: none;
+
+.title{
+    @include title()
 }
-body{
-    @include padding;
+@mixin xinxuan_line($width:100%) {
+    width: $width;
+    height: 8px;
+    background-color: #005aaa;
+}
+
+.xinxuan_line{
+    @include xinxuan_line()
+}
+
+@mixin heart_bx {
+    width: $width;
+    height: 60px;
+    margin: 0 auto;
+}
+.heart_bx{
+    @include heart_bx()
 }
 
 $width:1230px;
-// $height:70px;
-
 $xinxuanW:1583px;
 
 
 .heart_wrap{
     width: $xinxuanW;
     height: 968px;
-    background: wheat;
     margin:0 auto;
+        .heart_tab{
+            @include heart_bx();
+            border-bottom:2px solid #d8d8d8 ;
+            display: flex;
+            justify-content: space-around;
+                li{
+                    // width: 200px;
+                    height: 59px;
+                    float: left;
+                    text-align: center;
+                    padding-top: 26px;
+                    &:active span{
+                        border-bottom: 6px solid #005aaa;
+                        color: #005aaa;
+                    }
+                        span{
+                            font-size: 18px;
+                            color: #333;
+                            display: inline-block;
+                            line-height: 28px;
+                            padding: 0 6px;
+                        }
+                }
+        }
 }
 
-// .heart_bx{
-//     width: $width;
-//     height: 60px;
-//     margin: 0 auto;
-//     background: yellowgreen;
-// }
 .content_wrap{
     width: $xinxuanW;
     height: 744px;
-    background: forestgreen;
     overflow: hidden;
     .content{
         width: $width;
         height: 684px;
         margin: 60px auto;
-        background: gold;
             .xinxuan_box{
                 width: 500px;
                 height: 648px;
-                background: indianred;
+                background: #f1f2f6;
                 float: left;
+                    .shop_wrap{
+                        width: 500px;
+                        height: 557px;
+                    }
+                     img{
+                        width: 460px;
+                        height: 460px;
+                        background: pink;
+                        margin: 20px;
+                        }
+                    .shop_title{
+                        width: 500px;
+                        height: 18px;
+                        text-align: center;
+                        font-size: 18px;
+                        margin: 50px 0 0 ;
+                    }
+                    .shop_num{
+                        width: 500px;
+                        height: 14px;
+                        font-size: 14px;
+                        text-align: center;
+                        padding: 0 14px;
+                        margin: 15px 0 0 ;
+                        color: #555555;
+                        margin-bottom: 40px;
+                    } 
+                    
             }
             .xinxuan_box2{
                 width: 350px;
                 height: 324px;
                 background: #fff;
                 float: left;
+                .shop2_box{
+                    width: 350px;
+                    height: 235px;
+                    padding: 55px 0 0;
+                    text-align: center;
+                        img{
+                            width: 180px;
+                            height: 180px;
+                        }
+                       
+                }
             }
+            .shopS_title{
+                width: 350px;
+                height: 18px;
+                font-size: 16px;
+               text-align: center;
+               margin: 10px 0 0;
+               padding: 0 18px;
+        }
+        .shopS_num{
+            width: 350px;
+            height: 14px;
+            font-size: 14px;
+           text-align: center;
+           margin: 15px 0 23px;
+           padding: 0 14px;
+           color: #555555;
+        }
+
     }
+    
 }

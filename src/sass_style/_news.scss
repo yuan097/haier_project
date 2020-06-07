@@ -3,7 +3,7 @@
 $width:1230px;
 $height:742px;
 
-@mixin ellipsis($w:420px, $h:46px) {
+@mixin ellipsis($w:420px, $h:43px) {
     width: $w;
     height: $h;
     overflow: hidden;
@@ -21,13 +21,11 @@ $height:742px;
             width: $width;
             height: $height;
             margin: 0 auto;
-            background: gray;
                 .news_title{
                     width: $width ;
                     height: 167px;
                     padding-top: 7.7px;
                     padding-bottom: 9.8px;
-                    background: honeydew;
                     font-size: 40px;
                     font-weight: bold;
                     text-align: center;
@@ -43,8 +41,6 @@ $height:742px;
         .news_left{
             width: 640px;
             height: 568px;
-            background: lightblue;
-            position: relative;
                 .img_box{
                     width: 640px;
                     height: 360px;
@@ -77,20 +73,16 @@ $height:742px;
             -webkit-box-orient: vertical;
             font-size: 16px;
             line-height: 24px;
-            color: #666;
         }
         .detail_line{
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            margin-top: 35px;
             width: 640px;
             height: 2px;
             background: #c7d3d9;
                 .js_line{
                     position: absolute;
                     left: 0;
-                    height: 100%;
+                    height: 2px;
                     background: #0c5ca8;
                     width: 60px;
                 }
@@ -101,7 +93,7 @@ $height:742px;
           position: absolute;
           right: 0;
           top: 0;
-           background: sandybrown;
+          overflow: hidden;
             .new_top{
                 width: 60px;
                 height: 8px;
@@ -117,8 +109,7 @@ $height:742px;
             .rightnew1{
                 width: 420px;
                 height: 189px;
-                background: khaki;
-                padding: 35px 0 20px;
+                padding: 38px 0 20px;
                     .new1_title{
                         width: 100%;
                         height: 52px;
