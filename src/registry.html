@@ -17,7 +17,7 @@
                 <a href="./index.html" class="logo"><img src="https://image.haier.com/cn/images/haier2019_logo.png"
                         alt="#"></a>
                 &emsp;
-                <span>账号注册</span>
+                <i>账号注册</i>
             </div>
             <div class="nav-right">
                 <p>我已注册，<a href="./login.html">直接登录</a></p>
@@ -32,27 +32,25 @@
                 <p>一个账号便利享受Haier所有服务</p>
             </div>
             <div class="form-wrap">
-                <form action="" method="">
+                <form action="http://localhost/JS2002/haier_project/php/registry.php" method="post">
                     <p>
                         <label for="username">用户名</label>
                         <input type="text" name="username" id="username" placeholder="请输入用户名">
+                        <span></span>
                     </p>
 
                     <p>
                         <label for="tel">手机号</label>
                         <input type="text" name="tel" id="tel" placeholder="购买，安装，保修，手机注册更方便">
-                    </p>
-
-                    <p>
-                        <label for="tel">&emsp;邮箱 </label>
-                        <input type="text" name="email" id="email" placeholder="注册您的邮箱">
+                        <span></span>
                     </p>
 
                     <p>
                         <label for="password">&emsp;密码</label>
                         <input type="password" name="password" id="password" placeholder="6-16位，数字，字母或符号组合">
+                        <span></span>
                     </p>
-                    <button type="submit">注册</button>
+                    <button type="submit" name="submit">注册</button>
                     <p class="agreen">
                         <i></i>&nbsp;
                         我同意
@@ -84,10 +82,8 @@
         </div>
 
     </footer>
-    <script>
-        document.querySelector = 'i';
-
-    </script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/registry.js"></script>
 </body>
 
 </html>

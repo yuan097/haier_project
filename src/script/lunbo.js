@@ -72,5 +72,6 @@
     $timer = setInterval(()=>{
         tabswitch();
     },2000);
+
     
 }(jQuery);

@@ -39,10 +39,7 @@
                     <span class="num"></span>
                     <input type="text" name="tel" id="tel" placeholder="手机号">
                 </p>
-                <p>
-                    <span class="eml"></span>
-                    <input type="text" name="email" id="email" placeholder="验证邮箱">
-                </p>
+            
                 <p>
                     <span class="pass"></span>
                     <input type="text" name="password" id="password" placeholder="登录密码">
@@ -56,7 +53,8 @@
                     <a href="http://account.haier.com/html/privacypolicy.html"><span
                             style="color: #32beff">《法律声明及隐私权政策》</span></a>
                 </p>
-                <button type="submit">登录</button>
+                <button type="button" class="btn">登录</button> 
+                <!-- 注意登录按钮提交时，type类型设置为button -->
             </form>
         </div>
       </div>
@@ -83,6 +81,10 @@
         </div>
 
     </footer>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/sha1.js"></script>
+    <script src="./script/login.js"></script>
+
 </body>
 
 </html>

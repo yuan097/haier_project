@@ -83,7 +83,7 @@ header{
 }
 
 .form-wrap form{
-    width:454px ;
+    width:520px ;
     height: 420px;
     margin: 0px auto;
 }
@@ -109,7 +109,7 @@ header{
     margin: 0 auto;
 }
 .form-wrap form button{
-    background: #c6cacb;
+    background: #32ccff;
     width: 360px;
     height: 50px;
     display: block;
@@ -121,6 +121,7 @@ header{
     border: none;
     margin-top: 1em;
     color: #fff;
+    margin-left: 47px;
 }
 .form-wrap .agreen i{
     display:inline-block ;
@@ -129,7 +130,7 @@ header{
     background: url(../img/login_icon_1010.gif)no-repeat 0 -282px;
     vertical-align: middle;
 }
-.form-wrap .agreen i:active{
+.form-wrap .agreen i{
     display:inline-block ;
     width: 24px;
     height: 24px;

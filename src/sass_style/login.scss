@@ -73,13 +73,13 @@ header{
 /* form表单 */
 .wrap{
     width: 618px;
-    height: 488px;
+    height: 400px;
     margin: 0 auto;
     padding-top: 80px;
 }
 .form-wrap{
     width: 420px;
-    height: 488px;
+    height: 400px;
     background: white;
     margin-left: 105px;
     padding-bottom: 30px;
@@ -136,7 +136,7 @@ header{
     background: url(../img/login_icon_1010.gif)no-repeat 0 -282px;
     vertical-align: middle;
 }
-.form-wrap .agreen i:active{
+.form-wrap .agreen i{
     display:inline-block ;
     width: 24px;
     height: 24px;
@@ -144,7 +144,7 @@ header{
     vertical-align: middle;
 }
 .form-wrap form button{
-    background: #c6cacb;
+    background: #32ccff;
     width: 360px;
     height: 50px;
     line-height: 50px;
@@ -154,7 +154,7 @@ header{
     border: none;
     color: #fff;
     position: absolute;
-    bottom: -70px;
+    bottom: 5px;
 }
 
 

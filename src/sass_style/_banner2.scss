@@ -3,13 +3,23 @@
 $width:1230px;
 .banner2_wrap{
     width: 1583px;
-    height: 800px;
+    height: 600px;
     margin: 0 auto;
-    background: lightseagreen;
+    background: #f6f7f9;
         .banner2_content{
-            width: $width;
-            height: 800px;
-            background: orange;
+            width:1583px;
+            height: 600px;
             margin: 0 auto;
+                li{
+                    width: 1583px;
+                    height: 688px;
+                    text-align: center;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                        height: 567px;
+                    }
+                }
+               
         }
 }
